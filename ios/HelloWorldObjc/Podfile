@@ -5,7 +5,7 @@ target 'HelloWorldObjC' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for HelloWorldObjC
+  # Pods for HelloWorldObjc
 pod 'DynamsoftCameraEnhancer'
 
 end
