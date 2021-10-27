@@ -1,4 +1,4 @@
-# Dynamsoft Camera Enhancer samples for the Android and iOS editions
+# Dynamsoft Camera Enhancer samples for Android and iOS editions
 
 This repository contains multiple samples that demonstrates how to use the [Dynamsoft Camera Enhancer](https://www.dynamsoft.com/camera-enhancer/docs/introduction/) Android and iOS Editions.
 
