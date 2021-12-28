@@ -1,5 +1,6 @@
 
 #import "AppDelegate.h"
+#import <DynamsoftCameraEnhancer/DynamsoftCameraEnhancer.h>
 
 @interface AppDelegate ()
 
