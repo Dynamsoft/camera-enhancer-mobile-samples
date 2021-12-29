@@ -1,10 +1,3 @@
 
 .DS_Store
-ios/HelloWorldObjc/HelloWorldObjc.xcodeproj/project.xcworkspace/contents.xcworkspacedata
-ios/HelloWorldObjc/HelloWorldObjc.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
-ios/HelloWorldObjc/HelloWorldObjc.xcodeproj/project.xcworkspace/xcuserdata/admin.xcuserdatad/UserInterfaceState.xcuserstate
-ios/HelloWorldObjc/HelloWorldObjc.xcodeproj/xcuserdata/admin.xcuserdatad/xcschemes/xcschememanagement.plist
-*.xcworkspacedata
-ios/HelloWorldSwift/HelloWorldSwift.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
-*.xcuserstate
-ios/HelloWorldSwift/HelloWorldSwift.xcodeproj/xcuserdata/admin.xcuserdatad/xcschemes/xcschememanagement.plist
+*.aar
