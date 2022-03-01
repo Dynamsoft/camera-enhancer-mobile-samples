@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
         btnCapture = findViewById(R.id.btn_capture);
 
         // Initialize license.
-        // The string "DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9" here is a 7-day free license. Note that network connection is required for this license to work.
-        // You can also request a 30-day trial license in the customer portal: https://www.dynamsoft.com/customer/license/trialLicense?product=dce&utm_source=github&package=android
+        // The string "DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9" here is time-limited public trial license. Note that network connection is required for this license to work.
+        // You can also request a private trial license in the customer portal: https://www.dynamsoft.com/customer/license/trialLicense?product=dce&utm_source=github&package=android
         CameraEnhancer.initLicense("DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9", new DCELicenseVerificationListener() {
             @Override
             public void DCELicenseVerificationCallback(boolean isSuccess, Exception e) {
