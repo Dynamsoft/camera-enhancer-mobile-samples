@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Initialize license.
         // The string "DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9" here is a time-limited trial license. Note that network connection is required for this license to work.
-        // You can also request a 30-day trial license in the customer portal: https://www.dynamsoft.com/customer/license/trialLicense?product=dce&utm_source=github&package=android
+        // You can also request a private trial license in the customer portal: https://www.dynamsoft.com/customer/license/trialLicense?product=dce&utm_source=github&package=android
         CameraEnhancer.initLicense("DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9", new DCELicenseVerificationListener() {
             @Override
             public void DCELicenseVerificationCallback(boolean isSuccess, Exception e) {
