@@ -5,12 +5,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.dynamsoft.core.CoreException;
+import com.dynamsoft.core.LicenseManager;
+import com.dynamsoft.core.LicenseVerificationListener;
 import com.dynamsoft.dce.CameraEnhancer;
 import com.dynamsoft.dce.CameraEnhancerException;
 import com.dynamsoft.dce.DCECameraView;
 import com.dynamsoft.dce.DCEFrame;
 import com.dynamsoft.dce.DCEFrameListener;
-import com.dynamsoft.dce.DCELicenseVerificationListener;
 
 public class MainActivity extends AppCompatActivity {
     DCECameraView cameraView;
@@ -28,13 +31,12 @@ public class MainActivity extends AppCompatActivity {
 
         // Add a button to capture frame.
         btnCapture = findViewById(R.id.btn_capture);
-
         // Initialize license.
         // The string "DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9" here is time-limited public trial license. Note that network connection is required for this license to work.
         // You can also request a private trial license in the customer portal: https://www.dynamsoft.com/customer/license/trialLicense?product=dce&utm_source=github&package=android
-        CameraEnhancer.initLicense("DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9", new DCELicenseVerificationListener() {
+        LicenseManager.initLicense("DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9", this, new LicenseVerificationListener() {
             @Override
-            public void DCELicenseVerificationCallback(boolean isSuccess, Exception e) {
+            public void licenseVerificationCallback(boolean isSuccess, CoreException e) {
                 if (!isSuccess) {
                     e.printStackTrace();
                 }
