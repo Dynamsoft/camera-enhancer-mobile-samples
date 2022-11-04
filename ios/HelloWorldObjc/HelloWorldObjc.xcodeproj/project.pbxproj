@@ -12,8 +12,6 @@
 		6889A5581CEED25800A45114 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6889A5561CEED25800A45114 /* Main.storyboard */; };
 		6889A55A1CEED25800A45114 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6889A5591CEED25800A45114 /* Assets.xcassets */; };
 		6889A55D1CEED25800A45114 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6889A55B1CEED25800A45114 /* LaunchScreen.storyboard */; };
-		8429C9D2276B3D4D00C95E4B /* DynamsoftCameraEnhancer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8429C9D1276B3D4D00C95E4B /* DynamsoftCameraEnhancer.framework */; platformFilter = ios; };
-		8429C9D3276B3D4D00C95E4B /* DynamsoftCameraEnhancer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8429C9D1276B3D4D00C95E4B /* DynamsoftCameraEnhancer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C425689A23151553001EE600 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C425689923151553001EE600 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
@@ -23,9 +21,7 @@
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
-			files = (
-				8429C9D3276B3D4D00C95E4B /* DynamsoftCameraEnhancer.framework in Embed Frameworks */,
-			);
+			files = ();
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,7 +36,6 @@
 		6889A5591CEED25800A45114 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6889A55C1CEED25800A45114 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6889A55E1CEED25800A45114 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8429C9D1276B3D4D00C95E4B /* DynamsoftCameraEnhancer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DynamsoftCameraEnhancer.framework; path = ../../Frameworks/DynamsoftCameraEnhancer.framework; sourceTree = "<group>"; };
 		C425689923151553001EE600 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C425689B2315155B001EE600 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,9 +44,7 @@
 		6889A5471CEED25700A45114 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
-			files = (
-				8429C9D2276B3D4D00C95E4B /* DynamsoftCameraEnhancer.framework in Frameworks */,
-			);
+			files = ();
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
@@ -92,9 +85,7 @@
 		};
 		68BA8B7020E20BD100A2737D /* Frameworks */ = {
 			isa = PBXGroup;
-			children = (
-				8429C9D1276B3D4D00C95E4B /* DynamsoftCameraEnhancer.framework */,
-			);
+			children = ();
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
@@ -108,7 +99,6 @@
 				6889A5461CEED25700A45114 /* Sources */,
 				6889A5471CEED25700A45114 /* Frameworks */,
 				6889A5481CEED25700A45114 /* Resources */,
-				8429C9D4276B3D4D00C95E4B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -311,7 +301,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W6PESGXW9M;
 				ENABLE_BITCODE = YES;
-				FRAMEWORK_SEARCH_PATHS = ../../Frameworks/;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"../../Frameworks/",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = HelloWorldObjc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -341,7 +334,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W6PESGXW9M;
 				ENABLE_BITCODE = YES;
-				FRAMEWORK_SEARCH_PATHS = ../../Frameworks/;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"../../Frameworks/",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = HelloWorldObjc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
