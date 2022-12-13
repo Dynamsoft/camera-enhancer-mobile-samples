@@ -6,6 +6,6 @@ target 'HelloWorldSwift' do
   use_frameworks!
 
   # Pods for HelloWorldSwift
-pod 'DynamsoftCameraEnhancer','2.3.4'
+pod 'DynamsoftCameraEnhancer','2.3.10'
 
 end
