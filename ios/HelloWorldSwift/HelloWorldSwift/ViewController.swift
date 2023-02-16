@@ -1,6 +1,8 @@
 //
 //  ViewController.swift
+//  HelloWorldSwift
 //
+//  Copyright © Dynamsoft. All rights reserved.
 //
 
 import UIKit
@@ -25,7 +27,6 @@ class ViewController: UIViewController,DCEFrameListener{
         self.view.addSubview(dceView)
         dce = DynamsoftCameraEnhancer.init(view: dceView)
         dce.open()
-        dce.setFrameRate(30)
         dce.addListener(self)
     }
     

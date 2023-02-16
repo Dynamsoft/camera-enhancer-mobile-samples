@@ -27,7 +27,6 @@
     _dce = [[DynamsoftCameraEnhancer alloc] initWithView:_dceView];
     [_dce open];
     [_dce addListener:self];
-    [_dce setFrameRate:30];
 }
 
 - (void)configurationUI{
