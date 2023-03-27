@@ -320,7 +320,7 @@
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_WORKSPACE = YES;
-				VALID_ARCHS = arm64 x86_64;
+				VALID_ARCHS = "arm64 x86_64";
 			};
 			name = Debug;
 		};
@@ -353,7 +353,7 @@
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_WORKSPACE = YES;
-				VALID_ARCHS = arm64 x86_64;
+				VALID_ARCHS = "arm64 x86_64";
 			};
 			name = Release;
 		};
