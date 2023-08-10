@@ -1,20 +1,20 @@
 # Dynamsoft Camera Enhancer samples for Android and iOS editions
 
-This repository contains multiple samples that demonstrates how to use the [Dynamsoft Camera Enhancer](https://www.dynamsoft.com/camera-enhancer/docs/introduction/) Android and iOS Editions.
+This repository contains multiple samples that demonstrates how to use the [Dynamsoft Camera Enhancer](https://www.dynamsoft.com/camera-enhancer/docs/core/introduction/) Android and iOS Editions.
 
 ## Requirements
 
 ### Android
-- Operating systems:
-  - Supported OS: Android 5 or higher (Android 7 or higher recommended)
-  - Supported ABI: armeabi-v7a, arm64-v8a, x86, x86_64
-- Environment: Android Studio 3.4+
+
+- Supported OS: Android 5 or higher (Android 7 or higher recommended)
+- Supported ABI: armeabi-v7a, arm64-v8a, x86, x86_64
+- Development Environment: Android Studio 3.4+ (Android Studio 4.2+ recommended).
 
 ### iOS
-- Operating systems:
-  - iOS 9.0 and above.
-- Environment: Xcode 7.1 - 11.5 and above.
-- Recommended: macOS 10.15.4+, Xcode 11.5+, iOS 11+, CocoaPods 1.11.0
+
+- Supported OS: iOS 11.0 or higher.
+- Supported ABI: arm64 and x86_64.
+- Development Environment: Xcode 13 and above (Xcode 14.1+ recommended).
 
 ## Samples
 

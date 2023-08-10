@@ -2,73 +2,55 @@ package com.dynamsoft.helloworld;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
-import androidx.appcompat.app.AppCompatActivity;
 
+import com.dynamsoft.core.basic_structures.ImageData;
 import com.dynamsoft.dce.CameraEnhancer;
 import com.dynamsoft.dce.CameraEnhancerException;
-import com.dynamsoft.dce.DCECameraView;
-import com.dynamsoft.dce.DCEFrame;
-import com.dynamsoft.dce.DCEFrameListener;
-import com.dynamsoft.dce.DCELicenseVerificationListener;
+import com.dynamsoft.dce.CameraView;
+import com.dynamsoft.dce.utils.PermissionUtil;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    DCECameraView cameraView;
+    private CameraView cameraView;
     CameraEnhancer mCameraEnhancer;
     Button btnCapture;
     Boolean needCapture = false;
-    static DCEFrame mFrame;
+
+    static ImageData imageData;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        PermissionUtil.requestCameraPermission(this);
 
         // Initialize the camera view for previewing video.
         cameraView = findViewById(R.id.cameraView);
 
         // Add a button to capture frame.
         btnCapture = findViewById(R.id.btn_capture);
-        // Initialize license.
-        // The string "DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9" here is a time-limited trial license. Note that network connection is required for this license to work.
-        // You can also request a private trial license in the customer portal: https://www.dynamsoft.com/customer/license/trialLicense?product=dce&utm_source=github&package=android
-        CameraEnhancer.initLicense("DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9", new DCELicenseVerificationListener() {
-            @Override
-            public void DCELicenseVerificationCallback(boolean isSuccess, Exception e) {
-                if (!isSuccess) {
-                    e.printStackTrace();
-                }
-            }
-        });
+
+
 
         // Create an instance of Dynamsoft Camera Enhancer.
-        mCameraEnhancer = new CameraEnhancer(MainActivity.this);
-
-        // Bind the camera view to the Camera Enhancer object.
-        mCameraEnhancer.setCameraView(cameraView);
+        mCameraEnhancer = new CameraEnhancer(cameraView, this);
 
         // Add a frame listener to acquire the latest frame from video streaming.
-        mCameraEnhancer.addListener(new DCEFrameListener() {
-            @Override
-            public void frameOutputCallback(DCEFrame frame, long nowTime) {
-                if(needCapture){
-                    needCapture = false;
-
-                    // Capture a frame, display it in the image view of the other activity.
-                    mFrame = frame;
-                    Intent intent = new Intent(MainActivity.this,ShowPictureActivity.class);
-                    startActivity(intent);
-                }
+        mCameraEnhancer.addListener((frame, nowTime) -> {
+            if(needCapture){
+                needCapture = false;
+                imageData = frame;
+                // Capture a frame, display it in the image view of the other activity.
+                Intent intent = new Intent(MainActivity.this,ShowPictureActivity.class);
+                startActivity(intent);
             }
         });
 
-        btnCapture.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                // Here we just set a flag, the actual capture action will be executed in the `frameOutputCallback`
-                needCapture = true;
-            }
+        btnCapture.setOnClickListener(v -> {
+            // Here we just set a flag, the actual capture action will be executed in the `frameOutputCallback`
+            needCapture = true;
         });
 
     }

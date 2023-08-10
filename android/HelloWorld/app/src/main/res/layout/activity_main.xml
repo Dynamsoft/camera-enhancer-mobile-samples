@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:showIn="@layout/activity_main">
 
-    <com.dynamsoft.dce.DCECameraView
+    <com.dynamsoft.dce.CameraView
         android:id="@+id/cameraView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
