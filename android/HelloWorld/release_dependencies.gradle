@@ -1,0 +1,19 @@
+import java.util.concurrent.TimeUnit
+
+allprojects {
+    ext {
+        dysGroupId = "com.dynamsoft"
+        artifactId = [
+                "dce": 'dynamsoftcameraenhancer',
+        ]
+
+        versions = [
+                "dce": "4.0.1",
+        ]
+    }
+    configurations.configureEach {
+        resolutionStrategy {
+            cacheChangingModulesFor 0, TimeUnit.SECONDS
+        }
+    }
+}

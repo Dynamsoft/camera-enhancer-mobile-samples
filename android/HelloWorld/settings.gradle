@@ -6,18 +6,11 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
-    repositories {
-        maven {
-            url "https://download2.dynamsoft.com/maven/aar"
-        }
-        google()
-        mavenCentral()
-        mavenLocal()
-    }
-}
 
 
 include ':app'
-rootProject.name = "HelloWorld"
+rootProject.name = "HelloWorld_DCE"
+
+//Dev
+include ':dev_mobile_sample_script'
+project(':dev_mobile_sample_script').projectDir = file('../../../mobile_sample_script')

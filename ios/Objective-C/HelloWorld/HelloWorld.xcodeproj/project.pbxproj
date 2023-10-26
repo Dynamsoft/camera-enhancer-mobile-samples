@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,12 @@
 		680213612A6FD38E00D8A576 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 680213602A6FD38E00D8A576 /* Assets.xcassets */; };
 		680213642A6FD38E00D8A576 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680213622A6FD38E00D8A576 /* LaunchScreen.storyboard */; };
 		680213672A6FD38E00D8A576 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 680213662A6FD38E00D8A576 /* main.m */; };
+		68B52FB42AE9FFD000311A9F /* DynamsoftCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B52FB22AE9FFC500311A9F /* DynamsoftCore.xcframework */; };
+		68B52FB52AE9FFD000311A9F /* DynamsoftCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68B52FB22AE9FFC500311A9F /* DynamsoftCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		68B52FB82AE9FFE800311A9F /* DynamsoftCameraEnhancer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B52FB62AE9FFE200311A9F /* DynamsoftCameraEnhancer.xcframework */; };
+		68B52FB92AE9FFE800311A9F /* DynamsoftCameraEnhancer.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68B52FB62AE9FFE200311A9F /* DynamsoftCameraEnhancer.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		68B52FC42AEA073800311A9F /* DynamsoftLicense.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B52FC32AEA073800311A9F /* DynamsoftLicense.xcframework */; };
+		68B52FC52AEA073800311A9F /* DynamsoftLicense.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68B52FC32AEA073800311A9F /* DynamsoftLicense.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,6 +29,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				68B52FB92AE9FFE800311A9F /* DynamsoftCameraEnhancer.xcframework in Embed Frameworks */,
+				68B52FB52AE9FFD000311A9F /* DynamsoftCore.xcframework in Embed Frameworks */,
+				68B52FC52AEA073800311A9F /* DynamsoftLicense.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,6 +51,9 @@
 		680213632A6FD38E00D8A576 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		680213652A6FD38E00D8A576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		680213662A6FD38E00D8A576 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		68B52FB22AE9FFC500311A9F /* DynamsoftCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DynamsoftCore.xcframework; path = ../../../../../Frameworks/DynamsoftCore.xcframework; sourceTree = "<group>"; };
+		68B52FB62AE9FFE200311A9F /* DynamsoftCameraEnhancer.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DynamsoftCameraEnhancer.xcframework; path = ../../../../../Frameworks/DynamsoftCameraEnhancer.xcframework; sourceTree = "<group>"; };
+		68B52FC32AEA073800311A9F /* DynamsoftLicense.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DynamsoftLicense.xcframework; path = ../../../../../Frameworks/DynamsoftLicense.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +61,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68B52FB82AE9FFE800311A9F /* DynamsoftCameraEnhancer.xcframework in Frameworks */,
+				68B52FB42AE9FFD000311A9F /* DynamsoftCore.xcframework in Frameworks */,
+				68B52FC42AEA073800311A9F /* DynamsoftLicense.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +108,9 @@
 		6802136D2A6FD3D300D8A576 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				68B52FC32AEA073800311A9F /* DynamsoftLicense.xcframework */,
+				68B52FB62AE9FFE200311A9F /* DynamsoftCameraEnhancer.xcframework */,
+				68B52FB22AE9FFC500311A9F /* DynamsoftCore.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
