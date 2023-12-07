@@ -5,10 +5,14 @@ allprojects {
         dysGroupId = "com.dynamsoft"
         artifactId = [
                 "dce": 'dynamsoftcameraenhancer',
+                "core": 'dynamsoftcore',
+                "license": 'dynamsoftlicense',
         ]
 
         versions = [
-                "dce": "4.0.1",
+                "dce": "4.0.2",
+                "core": "3.0.20",
+                "license": "3.0.30",
         ]
     }
     configurations.configureEach {

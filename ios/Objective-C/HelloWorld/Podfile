@@ -6,6 +6,8 @@ target 'HelloWorld' do
   use_frameworks!
 
   # Pods for HelloWorld
-  pod 'DynamsoftCameraEnhancer'
+  pod 'DynamsoftCore','3.0.20'
+  pod 'DynamsoftLicense','3.0.30'
+  pod 'DynamsoftCameraEnhancer','4.0.2'
 
 end
