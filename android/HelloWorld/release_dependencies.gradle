@@ -10,7 +10,7 @@ allprojects {
         ]
 
         versions = [
-                "dce": "4.0.2",
+                "dce": "4.0.3",
                 "core": "3.0.20",
                 "license": "3.0.30",
         ]
