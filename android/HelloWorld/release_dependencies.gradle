@@ -10,9 +10,9 @@ allprojects {
         ]
 
         versions = [
-                "dce": "4.0.3",
-                "core": "3.0.20",
-                "license": "3.0.30",
+                "dce": "4.2.0",
+                "core": "3.2.10",
+                "license": "3.2.10",
         ]
     }
     configurations.configureEach {
