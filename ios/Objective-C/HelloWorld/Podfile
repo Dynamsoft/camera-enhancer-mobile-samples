@@ -7,7 +7,7 @@ target 'HelloWorld' do
 
   # Pods for HelloWorld
   pod 'DynamsoftCore','3.2.30'
-  pod 'DynamsoftLicense','3.2.20'
+  pod 'DynamsoftLicense','3.2.21'
   pod 'DynamsoftCameraEnhancer','4.2.10'
 
 end
