@@ -1,5 +1,7 @@
 # Dynamsoft Camera Enhancer samples for Android and iOS editions
 
+⚠️ **Notice:** This repository has been **archived**. For the latest examples utilizing camera enhancer features, please visit the **[Dynamsoft Barcode Reader Samples](https://github.com/Dynamsoft/barcode-reader-mobile-samples)** or **[Dynamsoft Capture Vision Samples](https://github.com/Dynamsoft/capture-vision-mobile-samples)** repository. 🚀
+
 This repository contains multiple samples that demonstrates how to use the [Dynamsoft Camera Enhancer](https://www.dynamsoft.com/camera-enhancer/docs/core/introduction/) Android and iOS Editions.
 
 ## Requirements
